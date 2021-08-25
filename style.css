@@ -1,0 +1,264 @@
+  body, h1, h2, h3, h4, p, a {
+      margin: 0;
+      font-size: 100%; font-weight: normal
+    }
+  
+  *{
+    box-sizing: border-box;
+  }
+
+  a{
+    color: #fff;
+    text-decoration: none;
+    text-shadow: 4px 4px 5px rgba(56, 21, 21, 0.6);
+  }
+
+  body {
+    font-family: 'Helvetica', 'Arial', sans-serif;
+  }
+
+  .title-all{
+    font-size: 50px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin: auto;
+    text-shadow: 4px 4px 7px rgba(35, 12, 240, 0.288);
+  }
+
+  .title-section{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #ff7d47;
+    margin-left: 5%;
+    border-radius: 10px;
+    box-shadow: 4px 4px 5px rgba(56, 21, 21, 0.6);
+  }
+  .anhorn{
+    position: relative; 
+    top: -75px; 
+    width: 100%;
+  }
+
+  /* Навигация */
+
+  .head{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #e64a19;
+    position: fixed;
+    z-index: 10;
+  }
+
+  .head_section{
+    display: flex;
+    align-items: center;
+  }
+
+  .head_item{
+    padding: 10px 15px;
+    font-size: 20px;
+    margin-left: 5px;
+  }
+  .head_item:hover{
+    background-color: #0095a8;
+    border-radius: 5px;
+  }
+
+  .headlogo{
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 4px 4px 5px rgba(56, 21, 21, 0.6);
+  }
+
+  .headButton{
+    cursor: pointer;
+  }
+
+  /* Шапка */
+
+  .header {
+    height: 50vh;
+    background-color: #eee;
+    background-image: url(images/jan6.jpg);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  
+  .header-title {
+    font-size: 120px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin: auto;
+    text-shadow: 4px 4px 7px rgba(250, 50, 50, .5);
+  }
+  
+  .overlay {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5);
+    display: flex;
+  }
+
+  /* Слайдер */
+
+  .slider{
+    overflow: hidden;
+    width: 1100px;
+    height: 600px;
+    border:rgba(138, 23, 23, 0.5);
+  }
+  .middle{
+    margin: auto;
+    box-shadow: 4px 4px 5px rgba(56, 21, 21, 0.6);
+    border-radius: 5px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+  }
+
+  .navigation{
+    margin: auto;
+    width: max-content;
+    position: relative;
+    bottom: 16px;
+    display: flex;
+  }
+
+  .bar{
+    height: 8px;
+    width: 30px;
+    margin: 6px;
+    cursor: pointer;
+    background-color: rgb(255, 255, 255);
+    opacity: .7;
+    transition: all .4s ease;
+    border-radius: 5px;
+  }
+
+  .bar:hover{
+    opacity: 1;
+    transform: scale(1.1);
+  }
+
+  input[name="r"]{
+    position: absolute;
+    visibility: hidden;
+  }
+
+  .slides{
+    width: 400%;
+    height: 100%;
+    display: flex;
+  }
+
+  .slide{
+    width: 25%;
+    transition: all .6s ease;
+  }
+
+  .slide img{
+    width: 100%;
+    height: 100%;
+  }
+
+  #r1:checked ~ .s1 {
+    margin-left: 0%;
+  }
+  #r2:checked ~ .s1 {
+    margin-left: -25%;
+  }
+  #r3:checked ~ .s1 {
+    margin-left: -50%;
+  }
+  #r4:checked ~ .s1 {
+    margin-left: -75%;
+  }
+   
+  /* Блок с карточками */
+
+  .content{
+    font-size: 0;
+    width: 800px;
+    margin: 50px auto 50px auto;
+  }
+  
+  .card{
+    width: 350px;
+    margin-bottom: 60px;
+    padding: 45px 45px 70px 45px;
+    display: inline-block;
+    margin-right: 90px;
+    box-shadow: 4px 4px 5px rgba(56, 21, 21, 0.6);
+    border-radius: 5px;
+  }
+  
+  .no-right-margin{
+    margin-right: 0;
+  }
+  
+  .card-title{
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 10px;
+  }
+  
+  .card-text{
+    font-size: 16px;
+  }
+  
+  .card-image{
+    width: 100%;
+    margin-bottom: 25px;
+    border-radius: 5px;
+  }
+
+  /* Резюме */
+
+  .card_resum{
+    padding: 45px 45px 70px 45px;
+    display: inline-block;
+    box-shadow: 4px 4px 5px rgba(56, 21, 21, 0.6);
+    border-radius: 5px;
+  }
+  
+  /* Форма */
+
+  .forma {
+    width: 800px;
+    margin: 50px auto 50px auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #26c6da;
+    color: #fff;
+    box-shadow: 4px 4px 5px rgba(56, 21, 21, 0.6);
+    border-radius: 5px;
+  }
+  
+  .bord{
+    border-radius: 5px;
+  }
+
+  /* Подвал */
+
+  .footer{
+    height: 300px;
+    background-color: #0095a8;
+    display: flex;
+    margin-top: 50px;
+  }
+  
+  .footer-author{
+    background-color: 4px 4px 7px rgba(250, 50, 50, .5);
+    font-size: 24px;
+    margin: 50px 50px 100px 50px;
+    color: #fff;
+    text-shadow: 4px 4px 5px rgba(56, 21, 21, 0.6);
+  }
